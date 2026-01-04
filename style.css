@@ -1,0 +1,107 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+/* Navigation bar styling */
+nav {
+  background-color: #333;       /* Dark background */
+  color: #fff;                  /* White text */
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Brand logo/text in nav */
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Hero banner styling */
+.hero {
+  background-color: #555;       /* Dark gray background (you can use an image here) */
+  color: #fff;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  margin-top: 0;
+  font-size: 2.5rem;
+}
+
+.hero .tagline {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Products section */
+.products {
+  display: flex;
+  flex-wrap: wrap;               /* Wrap products to next line on small screens */
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;                     /* Space between product cards */
+}
+
+/* Individual product card */
+.product {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Product image */
+.product img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Product details */
+.product h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+.product .price {
+  color: #b12704;    /* A red color for price */
+  font-size: 1.1rem;
+  margin: 0.5rem 0 1rem;
+}
+
+/* "Add to Cart" button */
+.product button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.product button:hover {
+  background-color: #555;
+}
+
+/* Responsive media query: stack products vertically on small screens */
+@media (max-width: 600px) {
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product {
+    width: 90%;
+  }
+}
